@@ -1,0 +1,60 @@
+---
+title: "ReadCSV-Basics"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+### `readr::read_csv()`
+
+```{r}
+library(readr)
+
+read_csv('
+  c1,  c2
+   a,   1
+    ,   
+   c,   3
+')
+
+read_csv('
+  c1,  c2
+   a,   1
+  "",   
+   c,   3
+')
+
+```
+
+
+### `data.table::fread()`
+
+Unfortunately while `data.table::fwrite()` is my preferred option for writing CSV, **`data.table::fread()`** cannot be recommended for reading CSV.
+
+Since version 1.11.0 and still in today's version 1.12.2, `fread()` interprets blank spaces in quotes as empty strings instead of `NA`s.
+
+* [Blank space not recognised as NA in fread](https://stackoverflow.com/questions/51019041/blank-space-not-recognised-as-na-in-fread))
+* https://github.com/Rdatatable/data.table/issues/2586#issuecomment-387912090
+
+```{r}
+library(data.table)
+
+# Still can't find a solution for a quoted blank space
+fread(
+'c1,  c2
+  a,   1
+ "",   
+  c,   3'
+)
+
+# Here, the 'na.strings' argument solves the issue for an unquoted blank space
+fread(na.strings = c(''),
+'c1,  c2
+  a,   1
+   ,   
+  c,   3'
+)
+```
