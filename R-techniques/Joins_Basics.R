@@ -8,7 +8,7 @@ tbl_b = data.table( 'id'    = c(2, 3, 4),
 
 
 
-# Joins using data.table -------------------------------------------------------
+# Joins using x[y, ...] syntax -------------------------------------------------
 
 # INNER JOIN 'tbl_b' to 'tbl_a'
 tbl_a[tbl_b, on = .(id), nomatch = 0]
@@ -51,7 +51,7 @@ tbl_d = data.table( 'id1'   = c(2, 3, 4),
                     'value' = c("zweiundzwanzig", "einunddreissig", "vierzig"))
 
 
-# Composite join using data.table
+# Composite join using x[y, ...] syntax
 tbl_c[tbl_d, on = .( id1 ,  id2 ), nomatch = 0]
 tbl_c[tbl_d, on = c('id1', 'id2'), nomatch = 0]
 
