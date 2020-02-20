@@ -19,6 +19,9 @@ tbl_a[tbl_b, on = .(id)]
 
 # FULL JOIN not possible with data.table
 
+# ANTI JOIN tbl_b to tbl_a
+tbl_a[!tbl_b, on = .(id)]
+
 
 
 # Joins using merge() ----------------------------------------------------------
