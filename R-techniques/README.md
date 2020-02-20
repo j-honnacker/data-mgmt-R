@@ -13,12 +13,12 @@
 
 <tbody>
 
-<!-- Joins_Basics.R -->
+<!-- Tables_Joins_DataTable.R -->
 <tr>
 
 <td align="left">
-<code><a target="_blank" rel="noopener noreferrer" href="https://github.com/j-honnacker/data-mgmt-R/blob/master/R-techniques/Joins_Basics.R">
-Joins_Basics.R
+<code><a target="_blank" rel="noopener noreferrer" href="https://github.com/j-honnacker/data-mgmt-R/blob/master/R-techniques/Tables_Joins_DataTable.R">
+Tables_Joins_DataTable.R
 </a></code>
 </td>
 
