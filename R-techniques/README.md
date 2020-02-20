@@ -13,6 +13,21 @@
 
 <tbody>
 
+<!-- Joins_Basics.R -->
+<tr>
+
+<td align="left">
+<code><a target="_blank" rel="noopener noreferrer" href="https://github.com/j-honnacker/data-mgmt-R/blob/master/R-techniques/Joins_Basics.R">
+Joins_Basics.R
+</a></code>
+</td>
+
+<td align="left">
+showcases how to perform joins
+</td>
+</tr>
+
+
 <!-- ReadCSV_Basics.Rmd -->
 <tr>
 
