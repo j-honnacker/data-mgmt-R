@@ -28,6 +28,21 @@ showcases how to perform joins
 </tr>
 
 
+<!-- Tables_Set-Operations_DataTable.R -->
+<tr>
+
+<td align="left">
+<code><a target="_blank" rel="noopener noreferrer" href="https://github.com/j-honnacker/data-mgmt-R/blob/master/R-techniques/Tables_Set-Operations_DataTable.R">
+Tables_Set-Operations_DataTable.R
+</a></code>
+</td>
+
+<td align="left">
+shows how to perform set operations
+</td>
+</tr>
+
+
 <!-- ReadCSV_Basics.Rmd -->
 <tr>
 
