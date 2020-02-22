@@ -28,6 +28,21 @@ showcases how to perform joins
 </tr>
 
 
+<!-- Tables_Restructuring.R -->
+<tr>
+
+<td align="left">
+<code><a target="_blank" rel="noopener noreferrer" href="https://github.com/j-honnacker/data-mgmt-R/blob/master/R-techniques/Tables_Restructuring.R">
+Tables_Restructuring.R
+</a></code>
+</td>
+
+<td align="left">
+contains examples on how to transpose columns into rows, and vice versa.
+</td>
+</tr>
+
+
 <!-- Tables_Set-Operations_DataTable.R -->
 <tr>
 
